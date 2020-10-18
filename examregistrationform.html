@@ -1,0 +1,88 @@
+
+<!doctype HTML>
+<html>
+	<head><title>Phd Exam Registeration 2021</title></head>
+	<body>
+		<header>
+			<h1 align="center">Walchand College of Engineering,Sangli</h1>
+			<h1 align="center">Phd Exam Registeration 2021</h1>	
+		</header>
+		
+		<form id="phdform">
+			<fieldset>
+				<legend><h3>STUDENT INFORMATION:</h3></legend>
+				<label for="firstname">Firstname:</label>
+				<input type="text" id="firstname" name="firstname" required><br><br>
+				<label for="lastname">Lastname:</label>
+				<input type="text" id="lastname" name="lastname" required><br><br>
+				<label for="pname">Parents name:</label>
+				<input type="text" id="pname" name="pname" required><br><br>
+				<label for="mobileNo">Mobile No.:</label>
+				<input type="tel" id="mobileNo" name="mobileNo" required placeholder="9765******"><br><br>
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" required placeholder="abc@gmail.com"><br><br>
+				<label for="address">Address:</label><br>
+				<textarea id="address" name="address" required rows="3" cols="50" ></textarea><br><br>	
+				<label for="selectid">Select Id proof:</label>
+				<select id="selectid" name="selectid">
+					<option value="aadhar" selected>Aadhar card</option>
+					<option value="pan">Pan Card</option>
+					<option value="driving">Driving license</option>
+					<option value="lc">Leaving Certificate</option>
+				</select><br><br>	
+				<label for="idproof">Upload Your ID-proof:</label>
+				<input type="file" id="idproof" name="idproof" > 	
+			</fieldset>
+			<hr>
+			<fieldset>
+				<legend><h3>EDUCATIONAL INFORMATION:</h3></legend>
+				<label for="quali">Select Qualification</label>
+				<select id="quali" name="quali" required size="2">
+					<option value="mtech" >M.tech</option>
+					<option value="msc">M.Sc</option>
+					<option value="me" >M.E</option>
+					<option value="mba">M.BA</option>
+				</select><br><br>
+				<label for="branch">Select Branch:</label>
+				<select id="branch" name="branch" required>
+					<option value="cse">CSE</option>
+					<option value="me">MECH</option>
+					<option value="Ee">Elect.</option>
+					<option value="civil" selected>CIVIL</option>
+					<option value="entc">ENTC</option>
+				</select><br><br>
+				<label for="university">Select University:</label>
+				<input type="text" name="university" id="university" list="university" >
+				<label for="university">Select University:</label>
+				<input name="university" id="university" list="uni" >
+				<datalist id="uni">
+					<option value="Shivaji university">
+					<option value="Savitribai phule university">
+					<option value="North Maharashtra university">
+					<option value="Nagpur university">
+				</datalist>
+			</fieldset>
+			<fieldset>
+				<legend><h3>Exam Related Info:</legend>
+				<label for="city">Select the Prefered City for exam:</label>
+				<select id="city" name="city">
+				<optgroup label="Maharashtra">
+					<option value="pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Nagpur">Nagpur</option>
+				</optgroup>
+				<optgroup label="Delhi">
+					<option value="gurugram">Gurugram</option>
+					<option value="Noida">Noida</option>
+				</optgroup>
+				<optgroup label="Karnataka">
+					<option value="Banglore">Banglore</option>
+					<option value="Manglore">Manglore</option>
+				</optgroup>	
+				</fieldset>
+
+		</form>	
+                <br><br>
+                        <input type="submit" id="submit" name="submit">
+	</body>
+</html>
